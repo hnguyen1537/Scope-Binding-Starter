@@ -22,11 +22,13 @@ const fee = 200;
 // return the string "Rachel Green's remaining balance is <fee>"
 // DO NOT re-implement the function to be similar to `monica`'s `addToBalance` above.
 let rachelAddToBalance = function () {
+    return monica.addToBalance.call(rachel, fee);
   // TODO: Implement this function with the constant variable `fee` above.
   // HINT: this should be similar to the examples of the section "Which this is this?".
   // Use `apply`, `bind` or any similar example ways described in that section.
   // If you find yourself having more than 1 line, you are probably doing it incorrectly.
 };
+
 
 // DO NOT CHANGE ANYTHING AFTER THIS LINE.
 
@@ -43,5 +45,5 @@ module.exports = {
 
 // Call the function. Uncomment these lines to test.
 // NOTE: COMMENT these lines out when submit. Otherwise, it will fail.
-// console.log(rachelAddToBalance()); // "Rachel Green's remaining balance is 1700"
-// console.log(rachelAddToBalance()); // "Rachel Green's remaining balance is 1900"
+  console.log(rachelAddToBalance()); // "Rachel Green's remaining balance is 1700"
+  console.log(rachelAddToBalance()); // "Rachel Green's remaining balance is 1900"
